@@ -19,6 +19,6 @@ Para rodar o projeto:
 
 2.Rode o repositório indo à pasta production (cd production) e digitando ./mvnw spring-boot:run. Vai rodar em http://localhost:8080
 
-3.Vá a pasta production-frontend (cd ./production-frontend) e digitando npm install npm run dev. Vai rodar em http://localhost:5173
+3.Vá a pasta production-frontend (cd production-frontend) e digitando npm install e npm run dev. Vai rodar em http://localhost:5173. Por favor deixe o backend rodando antes.
 
 4.Pronto! Pode testar!
