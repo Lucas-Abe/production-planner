@@ -9,7 +9,7 @@ Pré-requisitos:
 
 -Maven
 
--Node.jps + npm
+-Node.js + npm
 
 -Git
 
