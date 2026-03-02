@@ -145,7 +145,7 @@ onMounted(() => {
 
     <p>Product, Raw Material and Quantity (of Raw Material) required to Produce</p>
 
-    <span>We need </span>
+    <span>We need</span>
 
     <input v-model.number="newComposition.quantityRequired" type="number" placeholder="Quantity Required" />
 
@@ -167,7 +167,7 @@ onMounted(() => {
       </option>
     </select>
 
-    
+
 
     <button @click="createComposition">
       Add Composition
@@ -230,5 +230,9 @@ button:hover {
   background-color: blue;
   cursor: pointer;
   color: white;
+}
+
+input {
+  margin-left: 5px;
 }
 </style>
