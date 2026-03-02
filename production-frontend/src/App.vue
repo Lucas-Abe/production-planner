@@ -229,5 +229,6 @@ button {
 button:hover {
   background-color: blue;
   cursor: pointer;
+  color: white;
 }
 </style>
