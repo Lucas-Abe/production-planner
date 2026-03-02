@@ -143,13 +143,13 @@ onMounted(() => {
 
     <h1>Product Composition</h1>
 
-    <p>Product, Raw Material and Quantity Required to Produce</p>
-    <select v-model="newComposition.productId">
-      <option disabled value="">Select Product</option>
-      <option v-for="p in products" :key="p.id" :value="p.id">
-        {{ p.name }}
-      </option>
-    </select>
+    <p>Product, Raw Material and Quantity (of Raw Material) required to Produce</p>
+
+    <span>We need </span>
+
+    <input v-model.number="newComposition.quantityRequired" type="number" placeholder="Quantity Required" />
+
+    <span> of </span>
 
     <select v-model="newComposition.rawMaterialId">
       <option disabled value="">Select Raw Material</option>
@@ -158,7 +158,16 @@ onMounted(() => {
       </option>
     </select>
 
-    <input v-model.number="newComposition.quantityRequired" type="number" placeholder="Quantity Required" />
+    <span> to produce 1 </span>
+
+    <select v-model="newComposition.productId">
+      <option disabled value="">Select Product</option>
+      <option v-for="p in products" :key="p.id" :value="p.id">
+        {{ p.name }}
+      </option>
+    </select>
+
+    
 
     <button @click="createComposition">
       Add Composition
@@ -201,10 +210,24 @@ onMounted(() => {
 </template>
 
 <style>
-
-div{
+div {
   background-color: #e0f2ff;
   font-family: Arial, sans-serif;
+  padding: 5px;
 }
 
+button {
+  text-decoration: none;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
 </style>
